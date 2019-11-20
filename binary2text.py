@@ -109,13 +109,13 @@ for block in inblock:
     if checkInVaricode(block):
         cart.append(binaryToChar(block))
     else:
-        print "failed: " + block
+        print ("failed: " + block)
 
 # Show temporary result as list
-print cart
+print (cart)
 
 # Filter (remove carriage return)
 cart = [c for c in cart if c != '\r']
 
 # Final result
-print "".join(cart)
+print ("".join(cart))
